@@ -1,0 +1,5 @@
+=form_for @student, :url => students_path, :remote => true do |f|
+  = f.label :name
+  = f.text_field :name
+  = f.submit 'Save'
+  = link_to_function('Cancel', 'cancel_form()')

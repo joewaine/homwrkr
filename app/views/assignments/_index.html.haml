@@ -1,0 +1,3 @@
+- Assignment.order(:name).each do |assignment|
+  = link_to(assignment.name, assignment_path(assignment))
+  = assignment.group_size
